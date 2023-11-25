@@ -32,9 +32,9 @@ int main()
 
    int numLines = LEN( text );
 
-   BDF *app = CreateWindow(830, 450, "Test text");
+   BDF *app = CreateWindow( 830, 450, "Test text" );
 
-   LoadBDFFont("../font/9x18.bdf");
+   LoadBDFFont( "../font/9x18.bdf" );
 
    Background( app, 0x2F3853 );
 
@@ -44,7 +44,7 @@ int main()
 
          for ( int i = 0; i < numLines; i++ )
          {
-            DrawBDFText( 36, i * 18 , text[ i ], 0x2F3853, 0xF1F1F1 );
+            DrawBDFText( 36, i * 18, text[ i ], 0x2F3853, 0xF1F1F1 );
          }
 
       ENDDRAWING( app );

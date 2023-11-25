@@ -52,7 +52,7 @@ int main()
 
          for( int i = 0; i < numLines; i++ )
          {
-            DrawBDFText( 36, i * 18 , text[ i ], 0x2F3853, 0xF1F1F1 );
+            DrawBDFText( 36, i * 18, text[ i ], 0x2F3853, 0xF1F1F1 );
          }
 
       ENDDRAWING( app );
