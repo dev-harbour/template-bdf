@@ -1,15 +1,7 @@
-# Template-BDF: A Lightweight BDF Font Renderer in OpenGL
+/*
+ *
+ */
 
-`Template-BDF` is a lightweight and efficient font rendering library using the 'Glyph Bitmap Distribution Format' (BDF).
-It is designed to enable easy and fast display of bitmap fonts in applications utilizing OpenGL and GLFW.
-
-### Getting Started
-
-For more info see [getting started](docs/README.md).
-
-### Examples
-
-``` c
 #include "bdf.h"
 
 int main()
@@ -40,9 +32,9 @@ int main()
 
    int numLines = LEN( text );
 
-   BDF *app = CreateWindow( 830, 450, "Test text" );
+   BDF *app = CreateWindow(830, 450, "Test text");
 
-   LoadBDFFont( "../font/9x18.bdf" );
+   LoadBDFFont("../font/9x18.bdf");
 
    Background( app, 0x2F3853 );
 
@@ -50,7 +42,7 @@ int main()
    {
       BEGINDRAWING( app );
 
-         for( int i = 0; i < numLines; i++ )
+         for ( int i = 0; i < numLines; i++ )
          {
             DrawBDFText( 36, i * 18 , text[ i ], 0x2F3853, 0xF1F1F1 );
          }
@@ -61,6 +53,3 @@ int main()
 
    CloseAll( app );
 }
-```
-
-![Main](docs/assets/img/text_01.png)

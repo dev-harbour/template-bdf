@@ -1,0 +1,6 @@
+# Template-BDF
+*.bak
+*.exe
+build
+lib
+tmp
