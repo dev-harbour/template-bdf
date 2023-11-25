@@ -7,7 +7,7 @@ It is designed to enable easy and fast display of bitmap fonts in applications u
 
 For more info see [getting started](docs/README.md).
 
-### Examples
+### Example
 
 ``` c
 #include "bdf.h"
